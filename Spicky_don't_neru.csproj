@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Spicky_don_t_neru</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+	  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\dontneruspeaki.wav" />
+    <None Remove="Assets\Speaki.ico" />
+    <None Remove="Assets\Speaki.png" />
+    <None Remove="Assets\SpeakiStartup.png" />
+    <None Remove="Assets\SpeakiStartup.wav" />
+    <None Remove="Assets\Speaky.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\dontneruspeaki.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\icon.ico" />
+    <Content Include="Assets\SpeakiStartup.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Speaki.png" />
+    <Resource Include="Assets\SpeakiStartup.png" />
+  </ItemGroup>
+
+</Project>
