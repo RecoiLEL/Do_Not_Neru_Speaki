@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <None Remove="Assets\dontneruspeaki.wav" />
+    <None Remove="Assets\dontpull.wav" />
+    <None Remove="Assets\euu.wav" />
     <None Remove="Assets\Speaki.ico" />
     <None Remove="Assets\Speaki.png" />
     <None Remove="Assets\SpeakiStartup.png" />
@@ -24,10 +26,23 @@
     <Content Include="Assets\dontneruspeaki.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\dontpull.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\euu.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\icon.ico" />
     <Content Include="Assets\SpeakiStartup.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="SkiaSharp" Version="3.119.1" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="3.119.1" />
+    <PackageReference Include="SkiaSharp.Views.WPF" Version="3.119.1" />
   </ItemGroup>
 
   <ItemGroup>
